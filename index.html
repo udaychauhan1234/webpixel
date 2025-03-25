@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Pixel Agency</title>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		/* Custom CSS */
+		body {
+			background-color: black;
+			color: white;
+			line-height: 1.6;
+		}
+
+		/* Navigation bar styling */
+		nav {
+			background-color: #333;
+			border-bottom: 2px solid limegreen;
+		}
+
+		#home {
+			background-color: black;
+			color: limegreen;
+			height: 70vh; /* Reduced height for a smaller top part */
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
+		#home h1 {
+			font-size: 3rem; /* Increased font size */
+		}
+
+		#home img {
+			width: 150px; /* Increased image size */
+			margin-bottom: 20px;
+		}
+
+		.portfolio-gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 20px;
+			margin-top: 2rem;
+		}
+
+		footer {
+			background-color: #333;
+			color: white;
+			padding: 1rem;
+			text-align: center;
+		}
+
+		/* Pricing Card Styles */
+		.card {
+			border: none;
+			border-radius: 15px;
+			transition: transform 0.3s;
+		}
+
+		.card:hover {
+			transform: scale(1.05);
+		}
+
+		.card-header {
+			background-color: limegreen;
+			color: black;
+			font-weight: bold;
+			border-radius: 15px 15px 0 0;
+		}
+
+		.btn-custom {
+			background-color: limegreen;
+			color: black;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand d-flex align-items-center" href="#">
+				<img src="web-pixel.png" alt="Logo" class="d-inline-block align-text-top" style="width: 50px;">
+				Portfolio
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+					<li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+					<li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+					<li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Home Section -->
+	<section id="home">
+		<h1>Web Pixel</h1>
+		<img src="web-pixel.png" alt="Logo">
+		<p>We turn your ideas into reality with modern web designs.</p>
+	</section>
+
+	<!-- About Section -->
+	<section id="about" class="py-5 bg-white text-black">
+		<div class="container text-center">
+			<h2 class="text-success">About Us</h2>
+			<p>Web Pixel community is a team of creative professionals dedicated to crafting beautiful and functional websites. Our expertise lies in delivering digital experiences that engage your audience and enhance your business growth.</p>
+		</div>
+	</section>
+
+	<!-- Portfolio Section -->
+	<section id="portfolio" class="py-5">
+		<div class="container text-center">
+			<h2 class="text-success">Our Portfolio</h2>
+			<div class="portfolio-gallery">
+				<img src="cafe.png" alt="Portfolio Image 1" class="img-fluid">
+				<img src="clinic.png" alt="Portfolio Image 2" class="img-fluid">
+				<img src="pine.png" alt="Portfolio Image 3" class="img-fluid">
+				<img src="travel.png" alt="Portfolio Image 4" class="img-fluid">
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section id="services" class="py-5 bg-white text-black">
+		<div class="container text-center">
+			<h2 class="text-success">Our Services</h2>
+			<p>At Web Pixel Agency, we offer a wide range of services including web design and development tailored to meet the needs of businesses of all sizes.</p>
+			<h1 class="mb-4">PRICING</h1>
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<div class="card shadow">
+						<div class="card-header">
+							<h5 class="card-title">First Combo</h5>
+						</div>
+						<div class="card-body">
+							<h6 class="card-subtitle mb-2">HTML + CSS</h6>
+							<p class="card-text">Just <strong>₹3000</strong></p>
+							<p class="card-text">Perfect for startups and personal projects.</p>
+						</div>
+						<div class="card-footer text-center">
+							<button class="btn btn-custom">Get Started</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card shadow">
+						<div class="card-header">
+							<h5 class="card-title">Second Combo</h5>
+						</div>
+						<div class="card-body">
+							<h6 class="card-subtitle mb-2">HTML + CSS + JavaScript</h6>
+							<p class="card-text">Just <strong>₹5000</strong></p>
+							<p class="card-text">Ideal for dynamic websites and applications.</p>
+						</div>
+						<div class="card-footer text-center">
+							<button class="btn btn-custom">Get Started</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card shadow">
+						<div class="card-header">
+							<h5 class="card-title">Third Combo</h5>
+						</div>
+						<div class="card-body">
+							<h6 class="card-subtitle mb-2">HTML + CSS + JavaScript + Bootstrap</h6>
+							<p class="card-text">Just <strong>₹6500</strong></p>
+							<p class="card-text">Comprehensive solution for modern websites.</p>
+						</div>
+						<div class="card-footer text-center">
+							<button class="btn btn-custom">Get Started</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>GET ₹500 CASHBACK THROUGH REFER OUR SERVICES ON YOUR ACTIVITY INCLUDING STORY STATUS ETC.</p>
+			<p>GET FREE DOMAIN NAME + FREE WEB HOSTING</p>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<p>© 2024 Web Pixel Agency. All rights reserved.</p>
+		<p>CONTACT: 8800512160</p>
+		<p>Name: Uday Chauhan, Freelancer</p>
+	</footer>
+
+	<!-- Bootstrap JS (optional, for navbar toggler) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
